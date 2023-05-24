@@ -42,7 +42,7 @@ public class Collisions : MonoBehaviour
     {
         if (Hit.gameObject.CompareTag("Gem"))
         {
-	   SoundHandler.Gemsound.Play();
+	   // SoundHandler.Gemsound.Play();
 	   GemsWon = GemsWon + 1;
 	   FeedbackText.GemsMessage.text = "Gems = " + GemsWon;
 	   Hit.gameObject.transform.position = new Vector3(-30f, 0f, 0f);
