@@ -16,5 +16,8 @@ public class CamMovement : MonoBehaviour
     void Update()
     {
         CamMov.position = new Vector3(PlayerMovement.CamXpos, CamMov.position.y, CamMov.position.z);
+	if (CamMov.position.x<-1.7){
+		CamMov.position = new Vector3(-1.7f, CamMov.position.y, CamMov.position.z);
+	   }
     }
 }

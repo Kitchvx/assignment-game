@@ -25,11 +25,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         MoveX = Input.GetAxis("Horizontal");
-	PlayerSprite.velocity = new Vector2(MoveX * 5f, PlayerSprite.velocity.y);
-	if (Input.GetButtonDown("Jump") && !PlayerController.InAir)
+	PlayerSprite.velocity = new Vector2(MoveX * 7f, PlayerSprite.velocity.y);
+	if (Input.GetButtonDown("Jump") && !Collisions.InAir)
 	{
-	    PlayerSprite.velocity = new Vector2(PlayerSprite.velocity.x, 7.5f);
-	    PlayerController.InAir = true;
+	    PlayerSprite.velocity = new Vector2(PlayerSprite.velocity.x, 6f);
+	    Collisions.InAir = true;
 	}
 	
 	if (MoveX > 0f) // To the right
