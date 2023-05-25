@@ -19,5 +19,8 @@ public class CamMovement : MonoBehaviour
 	if (CamMov.position.x<-1.7){
 		CamMov.position = new Vector3(-1.7f, CamMov.position.y, CamMov.position.z);
 	   }
+	if (CamMov.position.x>32.78){
+		CamMov.position = new Vector3(32.78f, CamMov.position.y, CamMov.position.z);
+	   }
     }
 }

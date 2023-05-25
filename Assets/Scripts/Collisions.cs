@@ -45,7 +45,7 @@ public class Collisions : MonoBehaviour
 	   // SoundHandler.Gemsound.Play();
 	   GemsWon = GemsWon + 1;
 	   FeedbackText.GemsMessage.text = "Gems = " + GemsWon;
-	   Hit.gameObject.transform.position = new Vector3(-30f, 0f, 0f);
+	   Hit.gameObject.transform.position = new Vector3(-12f, 0f, 0f);
 	}
     }
 
