@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
 	{
             SoundHandler.Winsound.Play();
 	    PlayerSprite.bodyType = RigidbodyType2D.Static; // Freezes the players movement
-            Invoke("NextLevel", 3f);
+            Invoke("NextLevel", 0.1f);
 	}
     }
    

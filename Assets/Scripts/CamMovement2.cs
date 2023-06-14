@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamMovement : MonoBehaviour
+public class CamMovement2 : MonoBehaviour
 {
     Transform CamMov;
 
@@ -19,8 +19,8 @@ public class CamMovement : MonoBehaviour
 	if (CamMov.position.x<-1.7){
 		CamMov.position = new Vector3(-1.7f, CamMov.position.y, CamMov.position.z);
 	   }
-	if (CamMov.position.x>32.78){
-		CamMov.position = new Vector3(32.78f, CamMov.position.y, CamMov.position.z);
+	if (CamMov.position.x>41){
+		CamMov.position = new Vector3(41f, CamMov.position.y, CamMov.position.z);
 	   }
     }
 }

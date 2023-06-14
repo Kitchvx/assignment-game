@@ -28,13 +28,13 @@ public class Collisions : MonoBehaviour
            // SoundHandler.Deathsound.Play();
 	   // PlayerAni.SetTrigger("Death"); Triggers the death animation
 	    PlayerSprite.bodyType = RigidbodyType2D.Static; // Freezes the players movement
-            Invoke("ReloadLevel", 3f);
+            Invoke("ReloadLevel", 1f);
 	}
 	if (Collide.gameObject.CompareTag("Win"))
 	{
             SoundHandler.Winsound.Play();
 	    PlayerSprite.bodyType = RigidbodyType2D.Static; // Freezes the players movement
-            Invoke("NextLevel", 3f);
+            Invoke("NextLevel", 1f);
 	}
     }
    

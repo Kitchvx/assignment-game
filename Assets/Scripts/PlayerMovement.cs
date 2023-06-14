@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 	PlayerSprite.velocity = new Vector2(MoveX * 7f, PlayerSprite.velocity.y);
 	if (Input.GetButtonDown("Jump") && !Collisions.InAir)
 	{
-	    PlayerSprite.velocity = new Vector2(PlayerSprite.velocity.x, 6f);
+	    PlayerSprite.velocity = new Vector2(PlayerSprite.velocity.x, 8f);
 	    Collisions.InAir = true;
 	}
 	
