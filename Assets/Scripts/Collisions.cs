@@ -10,6 +10,8 @@ public class Collisions : MonoBehaviour
     Rigidbody2D PlayerSprite;
     int GemsWon = 0;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +34,7 @@ public class Collisions : MonoBehaviour
 	}
 	if (Collide.gameObject.CompareTag("Win"))
 	{
-            SoundHandler.Winsound.Play();
+            // SoundHandler.Winsound.Play();
 	    PlayerSprite.bodyType = RigidbodyType2D.Static; // Freezes the players movement
             Invoke("NextLevel", 1f);
 	}
@@ -44,7 +46,7 @@ public class Collisions : MonoBehaviour
         {
 	   // SoundHandler.Gemsound.Play();
 	   GemsWon = GemsWon + 1;
-	   FeedbackText.GemsMessage.text = "Gems = " + GemsWon;
+	   FeedbackText.GemsMessage.text = "Points = " + GemsWon;
 	   Hit.gameObject.transform.position = new Vector3(-12f, 0f, 0f);
 	}
     }
